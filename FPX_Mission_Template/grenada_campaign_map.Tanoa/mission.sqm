@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=1608;
+		nextID=1650;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=107;
+		nextID=121;
 	};
 	class Camera
 	{
-		pos[]={8597.0898,532.79218,8898.5547};
-		dir[]={-0.48813549,-0.59359181,-0.63995451};
-		up[]={-0.36002615,0.80474412,-0.47200012};
-		aside[]={-0.79517651,1.5599653e-008,0.60652465};
+		pos[]={5646.8662,61.207119,11002.262};
+		dir[]={0.10496294,-0.7236346,0.68233907};
+		up[]={0.11003251,0.69012636,0.71529311};
+		aside[]={0.98848146,-1.6036211e-006,-0.15205327};
 	};
 };
 binarizationWanted=0;
@@ -130,13 +130,24 @@ addons[]=
 	"A3_Structures_F_Mil_BagBunker",
 	"A3_Structures_F_Civ_Lamps",
 	"A3_Structures_F_Exp_Commercial_Hotel_02",
-	"A3_Structures_F_Wrecks"
+	"A3_Structures_F_Wrecks",
+	"CUP_Creatures_People_Civil_Chernarus",
+	"A3_Weapons_F",
+	"A3_Characters_F",
+	"CUP_Creatures_Military_SLA",
+	"A3_Weapons_F_Items",
+	"ace_medical",
+	"CUP_Creatures_Military_Russia",
+	"CUP_Creatures_Military_Taki",
+	"mas_gue_rebl",
+	"FP_UniformsEverywhereElse",
+	"CUP_Creatures_Military_Chedaki"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=54;
+		items=64;
 		class Item0
 		{
 			className="A3_Props_F_Exp";
@@ -453,6 +464,63 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
+		class Item54
+		{
+			className="CUP_Creatures_People_Civil_Chernarus";
+			name="CUP_Creatures_People_Civil_Chernarus";
+		};
+		class Item55
+		{
+			className="A3_Weapons_F";
+			name="Arma 3 Alpha - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item56
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="http://www.arma3.com";
+		};
+		class Item57
+		{
+			className="CUP_Creatures_Military_SLA";
+			name="CUP_Creatures_Military_SLA";
+		};
+		class Item58
+		{
+			className="ace_medical";
+			name="ACE3 - Medical";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item59
+		{
+			className="CUP_Creatures_Military_Russia";
+			name="CUP_Creatures_Military_Russia";
+		};
+		class Item60
+		{
+			className="CUP_Creatures_Military_Taki";
+			name="CUP_Creatures_Military_Taki";
+		};
+		class Item61
+		{
+			className="mas_gue_rebl";
+			name="mas_gue_rebl";
+			author="massi & authors in credits";
+		};
+		class Item62
+		{
+			className="FP_UniformsEverywhereElse";
+			name="FP_UniformsEverywhereElse";
+		};
+		class Item63
+		{
+			className="CUP_Creatures_Military_Chedaki";
+			name="CUP_Creatures_Military_Chedaki";
+		};
 	};
 };
 randomSeed=10677096;
@@ -479,8 +547,8 @@ class Mission
 		year=1983;
 		month=10;
 		day=23;
-		hour=12;
-		minute=0;
+		hour=14;
+		minute=28;
 		startFogBase=35;
 		forecastFogBase=35;
 		startFogDecay=0.040427234;
@@ -488,7 +556,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=13;
+		items=31;
 		class Item0
 		{
 			dataType="Layer";
@@ -22740,6 +22808,7 @@ class Mission
 					};
 					id=1606;
 					type="Land_BarGate_F";
+					atlOffset=-2.3841858e-007;
 				};
 				class Item304
 				{
@@ -44354,10 +44423,11 @@ class Mission
 					};
 					id=1603;
 					type="Land_BarGate_F";
+					atlOffset=-2.3841858e-007;
 				};
 			};
 			id=1126;
-			atlOffset=1.2159348e-005;
+			atlOffset=1.1920929e-005;
 		};
 		class Item9
 		{
@@ -56018,12 +56088,12 @@ class Mission
 						angles[]={0,5.2195764,0};
 					};
 					side="Empty";
-					flags=4;
 					class Attributes
 					{
 					};
 					id=1600;
 					type="fp_static_dshkm_b";
+					atlOffset=2.7430191;
 				};
 				class Item193
 				{
@@ -56059,7 +56129,7 @@ class Mission
 				};
 			};
 			id=1127;
-			atlOffset=2.5463257;
+			atlOffset=2.5479736;
 		};
 		class Item10
 		{
@@ -60876,6 +60946,2885 @@ class Mission
 			};
 			id=1519;
 			atlOffset=0.090103149;
+		};
+		class Item13
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5658.3579,2.661442,11061.308};
+						angles[]={0,3.8170874,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						name="grenada";
+						isPlayer=1;
+					};
+					id=1609;
+					type="CUP_C_C_Functionary_02";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENGFRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Governor Paul Scoon";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="TanoanHead_A3_06";
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1608;
+		};
+		class Item14
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5659.2021,2.6614389,11060.628};
+						angles[]={0,3.8170874,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						name="grenada_1";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_O_SLA_Officer_Suit";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							watch="ItemWatch";
+							goggles="G_Squares";
+							headgear="CUP_H_SLA_OfficerCap";
+						};
+					};
+					id=1611;
+					type="CUP_C_C_Functionary_02";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.89999998;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="General Hudson Austin";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="TanoanHead_A3_08";
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1610;
+		};
+		class Item15
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5659.8955,2.6614389,11059.994};
+						angles[]={0,3.8170874,0};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						name="grenada_2";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_C_Suit_01";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							watch="ItemWatch";
+							goggles="G_Aviator";
+						};
+					};
+					id=1642;
+					type="CUP_C_C_Functionary_01";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02GRE";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.03;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="PM Bernard Coard";
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="AfricanHead_03";
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1612;
+		};
+		class Item16
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5660.6611,2.6614389,11059.386};
+						angles[]={0,3.7666824,0};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						name="grenada_3";
+					};
+					id=1643;
+					type="CUP_C_C_Functionary_01";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENGFRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MP Dave Bartholomew";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="TanoanHead_A3_07";
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1614;
+		};
+		class Item17
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5661.4131,2.6614389,11058.751};
+						angles[]={0,3.8170874,0};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						name="grenada_4";
+						stance="Up";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_O_SLA_Officer_Suit";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							watch="ItemWatch";
+							goggles="G_Spectacles";
+							headgear="CUP_H_RUS_Beret_Spetsnaz";
+						};
+					};
+					id=1644;
+					type="CUP_C_C_Functionary_01";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENGFRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Colonel Callistus Bernard";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="TanoanHead_A3_05";
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1616;
+		};
+		class Item18
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5662.1138,2.6614389,11058.312};
+						angles[]={0,3.8170874,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						name="grenada_5";
+					};
+					id=1619;
+					type="CUP_C_C_Functionary_02";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENGFRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.0066593;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Deputy PM Phyllis Coard";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="AfricanHead_02";
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1618;
+		};
+		class Item19
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5662.7109,2.6614389,11057.691};
+						angles[]={0,3.8170874,0};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						name="grenada_6";
+					};
+					id=1645;
+					type="CUP_C_C_Functionary_01";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02FRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MP Leon Cornwall";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="TanoanHead_A3_01";
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1620;
+		};
+		class Item20
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5663.458,2.6614389,11057.041};
+						angles[]={0,3.8170874,0};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						name="grenada_7";
+					};
+					id=1646;
+					type="CUP_C_C_Functionary_01";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENGFRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.0700001;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MP Liam James";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="AfricanHead_03";
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1622;
+		};
+		class Item21
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5664.2471,2.6614389,11056.36};
+						angles[]={0,3.8170874,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						name="grenada_8";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_O_SLA_Officer_Suit";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							watch="ItemWatch";
+							goggles="G_Aviator";
+							headgear="CUP_H_SLA_OfficerCap";
+						};
+					};
+					id=1625;
+					type="CUP_C_C_Functionary_02";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01FRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.0599999;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="General Ewart Layne";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="TanoanHead_A3_07";
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1624;
+		};
+		class Item22
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5664.8989,2.6614389,11055.781};
+						angles[]={0,3.8170874,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						name="grenada_9";
+					};
+					id=1627;
+					type="CUP_C_C_Functionary_02";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02FRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.91925591;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MP Colville McBarnette";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="TanoanHead_A3_03";
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1626;
+		};
+		class Item23
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5665.6919,2.6614389,11055.01};
+						angles[]={0,3.8170874,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						name="grenada_10";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_O_TK_Officer";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_O_SLA_Flak_Vest02";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AlicePack_Bedroll";
+								isBackpack=1;
+							};
+							watch="ItemWatch";
+							headgear="CUP_H_RUS_Beret_Spetsnaz";
+						};
+					};
+					id=1629;
+					type="CUP_C_C_Functionary_02";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENGFRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.1;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Captain Cecil Prime";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="TanoanHead_A3_02";
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1628;
+		};
+		class Item24
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5666.4292,2.6614389,11054.276};
+						angles[]={0,3.8170874,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						name="grenada_11";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_O_TK_Officer";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_mas_gue_ind_chicom_she";
+								isBackpack=0;
+							};
+							watch="ItemWatch";
+							goggles="G_Aviator";
+							headgear="CUP_H_RUS_Beret_Spetsnaz";
+						};
+					};
+					id=1631;
+					type="CUP_C_C_Functionary_02";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENGFRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.0024973;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Captain Lester Redhead";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="TanoanHead_A3_04";
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1630;
+		};
+		class Item25
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5667.2158,2.6614389,11053.655};
+						angles[]={0,3.8170874,0};
+					};
+					side="Civilian";
+					flags=6;
+					class Attributes
+					{
+						name="grenada_12";
+					};
+					id=1647;
+					type="CUP_C_C_Functionary_01";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03FRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.91000003;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="MP Selwyn Strachan";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="TanoanHead_A3_06";
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1632;
+		};
+		class Item26
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5667.897,2.6614389,11052.926};
+						angles[]={0,3.8170874,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						name="grenada_13";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_O_SLA_Green";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_RUS_Smersh_2";
+								isBackpack=0;
+							};
+							watch="ItemWatch";
+							goggles="G_Aviator";
+							headgear="FP_Beret_Grey";
+						};
+					};
+					id=1635;
+					type="CUP_C_C_Functionary_02";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENGFRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Major Christopher Stroude";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="TanoanHead_A3_01";
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1634;
+		};
+		class Item27
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5668.7339,2.6614389,11052.174};
+						angles[]={0,3.8170874,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						name="grenada_14";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_O_TK_MixedCamo";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_O_Ins_Carrier_Rig_Com";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="usm_pack_alice_prc119";
+								isBackpack=1;
+							};
+							watch="ItemWatch";
+							headgear="CUP_H_SLA_Helmet";
+						};
+					};
+					id=1637;
+					type="CUP_C_C_Functionary_02";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male04ENGB";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.0599999;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Captain John Ventour";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="TanoanHead_A3_07";
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1636;
+		};
+		class Item28
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5669.4111,2.6614389,11051.381};
+						angles[]={0,3.8170874,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						name="grenada_15";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_O_TK_Green";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="CUP_V_O_SLA_Carrier_Belt03";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AlicePack_Bedroll";
+								isBackpack=1;
+							};
+							watch="ItemWatch";
+							headgear="CUP_H_SLA_Helmet";
+						};
+					};
+					id=1639;
+					type="CUP_C_C_Functionary_02";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENGB";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Lieutenant Vincent Joseph";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="TanoanHead_A3_07";
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1638;
+		};
+		class Item29
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5670.1001,2.6614389,11050.663};
+						angles[]={0,3.8170874,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						name="grenada_16";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_O_TK_Green";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_mas_gue_ind_chicom_she";
+								isBackpack=0;
+							};
+							watch="ItemWatch";
+							goggles="G_Aviator";
+							headgear="CUP_H_SLA_Helmet";
+						};
+					};
+					id=1641;
+					type="CUP_C_C_Functionary_02";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENGFRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.0524421;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Lieutenant Cosmos Richardson";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="AfricanHead_02";
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1640;
+		};
+		class Item30
+		{
+			dataType="Group";
+			side="Civilian";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={5670.833,2.6614389,11049.928};
+						angles[]={0,3.8170874,0};
+					};
+					side="Civilian";
+					flags=7;
+					class Attributes
+					{
+						name="grenada_17";
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="CUP_U_O_TK_MixedCamo";
+								isBackpack=0;
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="V_mas_gue_Sovest_lite";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="CUP_B_AlicePack_Bedroll";
+								isBackpack=1;
+							};
+							watch="ItemWatch";
+							headgear="CUP_H_SLA_Helmet";
+						};
+					};
+					id=1649;
+					type="CUP_C_C_Functionary_02";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1) then {_this setVariable [""ace_medical_medicClass"",_value,true];};";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENGFRE";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.94;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="unitName";
+							expression="_this setname _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Sergeant Andy Michell";
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="face";
+							expression="_this setface _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="TanoanHead_A3_04";
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1648;
 		};
 	};
 };
