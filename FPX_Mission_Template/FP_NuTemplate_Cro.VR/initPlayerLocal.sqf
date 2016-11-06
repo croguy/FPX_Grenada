@@ -8,26 +8,22 @@
 // These below scripts are RECOMMENDED but not enabled by default
 // Remove the comments and change the needed strings to fit your mission (match the object names)
 
-
+/*
 // Cold start
 [
   "gm0, gm1, plt0", // units who can start the mission. are automatically added to "can move"
-  "plt1, plt0, a1, b1, c1, d1, e1" // units who can move freely
+  "plt1, a0, a1, a2, b0, b1, b2, e0, q0, q1, q2, w0, w1, l0, l1" // units who can move freely
 ] call compile preprocessFileLineNumbers "scripts\cold_start.sqf";
 
 // Teleport flag, first is the object to addaction to, second format is ["display name", "objectName"]
 [fp_flag, [
-  ["Platoon", "plt0"],
-  ["Alpha", "a1"],
-  ["Bravo", "b1"],
-  ["Charlie", "c1"],
-  ["Delta", "d1"]
+  ["Plt Command", "plt0"],
+  ["Alpha actual", "a0"],
+  ["Bravo actual", "b0"]
 ]] execVM "scripts\teleport_flag.sqf";
+*/
 
-// Get briefing
-[] call compile preProcessFileLineNumbers "briefing.sqf";
-
-// APPLY LOADOUTS
+// Apply loadouts
 if (!isNil "FP_fnc_getLoadout") then {
   private _added = [player, typeOf player] call FP_fnc_getLoadout;
 

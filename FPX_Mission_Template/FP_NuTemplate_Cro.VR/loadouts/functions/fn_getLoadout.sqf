@@ -26,7 +26,7 @@ if (count _ele != 1) exitWith {
   if (!isMultiplayer) then {
     if (isNil "FP_LOADOUT_ERR") then {
       FP_LOADOUT_ERR = [];
-      [{time > 2}, {"LOADOUT ERRORS" hintC composeText FP_LOADOUT_ERR; FP_LOADOUT_ERR = nil}, []] call ace_common_fnc_waitUntilAndExecute;
+      [{time > 2}, {"LOADOUT ERRORS" hintC composeText FP_LOADOUT_ERR; FP_LOADOUT_ERR = nil}, []] call CBA_fnc_waitUntilAndExecute;
     };
     FP_LOADOUT_ERR pushBack format ["LOADOUT: Found zero or duplicate loadouts for %1. (type %2)", str _unit, _type];
     FP_LOADOUT_ERR pushBack lineBreak;
@@ -46,6 +46,6 @@ removeAllAssignedItems _unit;
 [{
   params ["_args", "_script"];
   _args call compile preprocessFileLineNumbers ("loadouts\" + _script);
-}, [[_unit, _type], (_ele select 0) select 1]] call ace_common_fnc_execNextFrame;
+}, [[_unit, _type], (_ele select 0) select 1]] call CBA_fnc_execNextFrame;
 
 true

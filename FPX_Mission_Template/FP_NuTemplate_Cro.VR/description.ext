@@ -17,10 +17,10 @@ class CfgFunctions {
 };
 
 // ===  Mission name etc settings
-OnLoadName = "FP NuTEMPLATE 4.0.0";// Mission name (short)
+OnLoadName = "FP TEMPLATE 4.0.0";// Mission name (short)
 onLoadMission="description.ext to change!"; // Longer description
 // loadScreen = "img_loading.jpg"; // custom load image
-author="Cuel | Croguy | 2016";
+author="Cuel | 2016";
 
 // ===  Respawn settings
 respawndelay = 4;
